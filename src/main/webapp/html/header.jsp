@@ -16,26 +16,26 @@
     <section class="header">
         <ul class="menus">
             <li>
-                <a href="addBill.jsp" class="menu">
-                    <img class="icon" src="assets/image/notepad.png">
+                <a href="" class="menu">
+                    <img class="icon" src="../image/notepad.png">
                     Sổ ghi
                 </a>
             </li>
             <li>
-                <a href="addBill.jsp" class="menu">
-                    <img class="icon" src="assets/image/calendar.png">
+                <a href="" class="menu">
+                    <img class="icon" src="../image/calendar.png">
                     Lịch
                 </a>
             </li>
             <li>
-                <a href="addBill.jsp" class="menu">
-                    <img class="icon" src="assets/image/analytics.png">
+                <a href="" class="menu">
+                    <img class="icon" src="../image/analytics.png">
                     Thống kê
                 </a>
             </li>
             <li>
-                <a href="addBill.jsp" class="menu">
-                    <img class="icon" src="assets/image/cogwheel.png">
+                <a href="login.jsp" class="menu">
+                    <img class="icon" src="../image/cogwheel.png">
                     Cài đặt
                 </a>
             </li>

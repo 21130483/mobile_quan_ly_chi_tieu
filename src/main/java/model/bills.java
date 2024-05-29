@@ -5,7 +5,7 @@ import java.sql.Date;
 public class bills {
     private int id;
     private int userId;
-    private int typeBillId;
+    private int contentBillId;
     private int money;
     private Date date;
 
@@ -25,12 +25,12 @@ public class bills {
         this.userId = userId;
     }
 
-    public int getTypeBillId() {
-        return typeBillId;
+    public int getContentBillId() {
+        return contentBillId;
     }
 
-    public void setTypeBillId(int typeBillId) {
-        this.typeBillId = typeBillId;
+    public void setContentBillId(int contentBillId) {
+        this.contentBillId = contentBillId;
     }
 
     public int getMoney() {
@@ -47,5 +47,16 @@ public class bills {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "bills{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", contentBillId=" + contentBillId +
+                ", money=" + money +
+                ", date=" + date +
+                '}';
     }
 }

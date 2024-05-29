@@ -6,6 +6,17 @@
     list-style-type: none;
 }
 
+.unuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background-color: #FCBDEE;
+    font-size: 50px;
+    color: azure;
+}
+
 .main{
     padding: 15px 0;
     height: auto;

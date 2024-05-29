@@ -1,6 +1,8 @@
 package model;
 
-public class users {
+import dao.billsDAO;
+
+public class user {
     private int id;
     private String fullname;
     private String username;
@@ -37,4 +39,9 @@ public class users {
     public void setPassword(String password) {
         this.password = password;
     }
+
+//    public int getThuNhap(){
+//        billsDAO dao = new billsDAO();
+//
+//    }
 }
