@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <section class="header">
+        <ul class="menus">
+            <li>
+                <a href="addBill.html" class="menu">
+                    <img class="icon" src="assets/image/notepad.png">
+                    Sổ ghi
+                </a>
+            </li>
+            <li>
+                <a href="addBill.html" class="menu">
+                    <img class="icon" src="assets/image/calendar.png">
+                    Lịch
+                </a>
+            </li>
+            <li>
+                <a href="addBill.html" class="menu">
+                    <img class="icon" src="assets/image/analytics.png">
+                    Thống kê
+                </a>
+            </li>
+            <li>
+                <a href="addBill.html" class="menu">
+                    <img class="icon" src="assets/image/cogwheel.png">
+                    Cài đặt
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="main">
+
+        <section class="thongke">
+          <section class="total">
+            <div class="box">
+                <p>Thu nhập</p>
+                <p class="plus">+10000000</p>
+            </div>
+
+            <div class="box">
+                <p>Chi tiêu</p>
+                <p class="minus">-10000000</p>
+            </div>
+
+            <div class="box">
+                <p>Toàn bộ</p>
+                <p class="plus">+10000000</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="lists">
+            <div class="list">
+                <button class="dropdown" onclick="viewDetail('details1')">
+                    <p>Th5, 11/5</p>
+                    <div>
+                        <p>chi tiêu:200000, thu nhập: 2000000</p>
+                    </div>
+                    
+                </button>
+                <div class="details" id="details1">
+                    <div class="detail">
+                        <div class="content">
+                            <div class="box">
+                                <img class="icon" src="assets/image/chi/hamburger.png" alt="">
+                            </div>
+                            Đồ ăn
+                        </div>
+
+                        <div class="money">
+                            <p class="plus">+1000000 đồng</p>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="content">
+                            <div class="box">
+                                <img class="icon" src="assets/image/chi/hamburger.png" alt="">
+                            </div>
+                            Đồ ăn
+                        </div>
+
+                        <div class="money">
+                            <p class="plus">+1000000 đồng</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="list">
+                <button class="dropdown" onclick="viewDetail('details2')">
+                    <p>Th5, 11/5</p>
+                    <p>chi tiêu:200000, thu nhập: 2000000</p>
+                </button>
+                <div class="details" id="details2">
+                    <div class="detail">
+                        <div class="content">
+                            <div class="box">
+                                <img class="icon" src="assets/image/chi/hamburger.png" alt="">
+                            </div>
+                            Đồ ăn
+                        </div>
+
+                        <div class="money">
+                            <p class="minus">-1000000 đồng</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+
+    <a class="add" href="addBill.html">
+        <img class="icon" src="assets/image/pencil.png" alt="">
+    </a>
+
+    <script>
+        function viewDetail(detailId) {
+            var detail = document.getElementById(detailId);
+            // console.log(detail.style.display == 'none')
+            if (detail.style.display == 'none') {
+                detail.style.display = 'flex';
+            } else {
+                detail.style.display = 'none';
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <div class="chi-nhanh-cty">
+            <div class="text ten-cty">
+                <p>Công Ty quản lý chi tiêu
+                <p class="logo">MoneyPlus</p>
+                </p>
+                <img class="icon" src="assets/image/piggy-bank.png">
+            </div>
+
+            <p class="text tru-so">Trụ sở : 248A Nơ Trang Long, P.12, Q.Bình Thạnh, TP.Hồ Chí Minh.</p>
+            <p class="text phone-email">Điện thoại : 123 456 789.<br> Email : moneyplus@gmail.com</p>
+
+        </div>
+    </section>
+</body>
+
+</html>
