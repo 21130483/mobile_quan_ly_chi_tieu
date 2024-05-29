@@ -1,3 +1,7 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,41 +9,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
-    <section class="header">
-        <ul class="menus">
-            <li>
-                <a href="addBill.html" class="menu">
-                    <img class="icon" src="assets/image/notepad.png">
-                    Sổ ghi
-                </a>
-            </li>
-            <li>
-                <a href="addBill.html" class="menu">
-                    <img class="icon" src="assets/image/calendar.png">
-                    Lịch
-                </a>
-            </li>
-            <li>
-                <a href="addBill.html" class="menu">
-                    <img class="icon" src="assets/image/analytics.png">
-                    Thống kê
-                </a>
-            </li>
-            <li>
-                <a href="addBill.html" class="menu">
-                    <img class="icon" src="assets/image/cogwheel.png">
-                    Cài đặt
-                </a>
-            </li>
-        </ul>
-
-    </section>
+<jsp:include page="header.jsp"></jsp:include>
 
     <section class="main">
 
@@ -128,7 +102,7 @@
         </section>
     </section>
 
-    <a class="add" href="addBill.html">
+    <a class="add" href="addBill.jsp">
         <img class="icon" src="assets/image/pencil.png" alt="">
     </a>
 
@@ -153,20 +127,7 @@
 
 
 
-    <section class="footer">
-        <div class="chi-nhanh-cty">
-            <div class="text ten-cty">
-                <p>Công Ty quản lý chi tiêu
-                <p class="logo">MoneyPlus</p>
-                </p>
-                <img class="icon" src="assets/image/piggy-bank.png">
-            </div>
-
-            <p class="text tru-so">Trụ sở : 248A Nơ Trang Long, P.12, Q.Bình Thạnh, TP.Hồ Chí Minh.</p>
-            <p class="text phone-email">Điện thoại : 123 456 789.<br> Email : moneyplus@gmail.com</p>
-
-        </div>
-    </section>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 
 </html>
