@@ -19,6 +19,9 @@ import java.util.List;
 @WebServlet("/html/addBill")
 public class addBill extends HttpServlet {
     @Override
+
+//    2. check xem đăng nhâ chưa
+//    nếu chưa đăng nhập sẽ đâỷ sang login để đăng nhập
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         user user = (user) session.getAttribute("user");
@@ -34,10 +37,9 @@ public class addBill extends HttpServlet {
         }
 
     }
-
+    //8 .servel lấy dữ liệu từ GUI lưu vào CSDL
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         HttpSession session = req.getSession();
         user user = (user) session.getAttribute("user");
         int type = Integer.parseInt(req.getParameter("type"));
@@ -49,6 +51,8 @@ public class addBill extends HttpServlet {
         int money = Integer.parseInt(req.getParameter("money"));
         billsDAO billsDAO = new billsDAO();
         billsDAO.addBill(user.getId(),contentBillId,money,date);
+
+        //9. lưu thành công, chuyển sang màn hình chính
         req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 }

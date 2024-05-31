@@ -16,7 +16,7 @@
     <section class="header">
         <ul class="menus">
             <li>
-                <a href="" class="menu">
+                <a href="index.jsp" class="menu">
                     <img class="icon" src="../image/notepad.png">
                     Sổ ghi
                 </a>

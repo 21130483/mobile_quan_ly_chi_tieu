@@ -15,7 +15,7 @@
         <div class="chi-nhanh-cty">
             <div class="text ten-cty">
                 <p >Công Ty quản lý chi tiêu <p class="logo">MoneyPlus</p> </p>
-                <img class="icon" src="assets/image/piggy-bank.png">
+                <img class="icon" src="../image/piggy-bank.png">
             </div>
             
             <p class="text tru-so">Trụ sở : 248A Nơ Trang Long, P.12, Q.Bình Thạnh, TP.Hồ Chí Minh.</p>
